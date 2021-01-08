@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* color pallet :
+#1b262c
+#0f4c75
+#3282b8
+#bbe1fa
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(image/background-image/bg-image.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.container .header {
+    background-color: #1b262c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    color: white;
+}
+
+span {
+    color: red;
+}
+
+.top-navbar a {
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0px 15px;
+}
+
+.top-navbar a:hover {
+    color: red;
+}
+
+button {
+    padding: 9px 25px;
+    margin-right: 3px;
+    border: 2px solid;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #3282b8;
+    color: #ececec;
+    border-color: #3282b8;
+}
+
+button:hover {
+    background-color: #2c74a3;
+    color: #ececec;
+    border-color: #2c74a3;
+}
+
+.form {
+    background-color: #bbe1fa;
+    padding: 50px;
+    margin: 15px 5%;
+    border-radius: 5px;
+}
+
+.form h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+img {
+    border: 1px solid #3282b8;
+}
+
+.name {
+    color: black;
+    font-weight: bold;
+    padding: 5px 0;
+    text-align: left;
+}
+
+.desc {
+    padding: 5px 0;
+    text-align: justify;
+}
+
+.price {
+    padding: 5px 0;
+    text-align: left;
+    font-weight: bolder;
+    color: red;
+}
+
+.harga-diskon {
+    padding: 5px 0;
+    text-align: left;
+    font-weight: bolder;
+    color: green;
+}
+
+
+/* w3school_css_forms */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/* End w3school_css_forms */
+
+.report {
+    height: 40px;
+    float: left;
+    width: 100%;
+    margin: 10px;
+    padding: 6px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+/* Footer */
+
+.container footer {
+    background-color: #1b262c;
+    height: auto;
+    position: relative;
+}
+
+footer .footer-content {
+    display: flex;
+    height: auto;
+    padding: 30px 30px 15px;
+    margin: 0 5%;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    border: 1px solid #0f4c75;
+    border-radius: 3px;
+}
+
+.footer-section h1 {
+    text-align: left;
+    margin: 10px;
+    font-size: 15px;
+    color: #3282b8;
+    text-transform: uppercase;
+}
+
+.footer-content p,
+a {
+    text-align: justify;
+    color: grey;
+    margin: 10px;
+    font-size: 13px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: grey;
+    font-weight: 100;
+}
+
+.footer-section a:hover {
+    color: #ff3a3a;
+}
+
+footer .footer-bottom {
+    background-color: #1b262c;
+}
+
+.footer-bottom p {
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    font-size: 13px;
+    color: grey;
+    opacity: 0.6;
+}
+
+/* End Footer */
